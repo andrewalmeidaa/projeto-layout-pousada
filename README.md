@@ -1,4 +1,4 @@
-# projeto-layout-pousada
+# Projeto-layout-pousada
 Esta é uma página para uma pousada, que apresenta informações sobre serviços, acomodações, localização e contato. É um site responsivo que pode apresentar fotos e informações turísticas da região. É uma ferramenta para promover os serviços da pousada e se comunicar com os clientes.
 
 Página da Pousada XYZ
