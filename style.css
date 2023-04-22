@@ -1,0 +1,436 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    height: 100vh;
+}
+
+
+.navBar{
+	height: 60px;
+	/* max-width: 100%; */
+	/* background-color: antiquewhite; */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+    box-shadow: 0px 0.5px 5px 0px #000;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: orange;
+    font-size: 23px;
+    transition: .2s;
+    padding-left: 30px;
+}
+
+.navBar a:hover{
+    color: #818181;
+}
+
+.nav-button{
+    border: 0;
+    padding: 8px;
+    background-color: #fff;
+    /* margin: 8px; */
+    cursor: pointer;
+    /* aqui altera o tamanhoo simbolo azul */
+    margin-left: 40px;
+}
+
+.nav-button i{
+    color: orange;
+}
+
+.overlay{
+    width: 100%;
+    height: 0;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    /* isso aqui determina que essa nav vai ficar sobre qualquer coisa da pagina */
+    position: fixed;
+    right:0;
+    top: 0;
+    overflow-y: hidden;
+    transition: all 0.6s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    /* aqui desce um pouco a posicao*/
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    /* assim coloca um abaixo do outro */
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+/* quando passar o mouse sobre ou ele tiver com foco isso acontecera */
+    color: #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    /* uma forma de posicionar os itens */
+    font-size: 60px;
+}
+
+.container{
+    height: 100vh;
+}
+
+.containerTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    gap: 10px;
+}
+
+.containerTitles h1{
+    font-size: 55px;
+    color: orange;
+}
+
+.containerTitles p{
+    font-size: 20px;
+}
+
+.containerTitles button{
+    height: 60px;
+    width: 250px;
+    border: 0;
+    font-size: 17px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.containerTitles button:hover{
+    background-color: rgb(191, 124, 0);
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.imageContainer img{
+    height: 700px;
+}
+
+.containerDepoimentosTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hrDepoimentos{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 35px;
+    border: 1px solid black;
+}
+
+.containerDepoimentosBoxContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    /* height: 600px; */
+}
+
+.containerDepoimentosBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+}
+
+.depoimentosHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.depoimentosHeader p{
+    font-size: 17px;
+}
+
+.depoimentosContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.depoimentosContent p{
+    font-size: 18px;
+}
+
+.depoimentosContent h2{
+    font-size: 18px;
+    color: orange;
+}
+
+.containerDepoimentosMais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerDepoimentosMais a{
+    text-decoration: none;
+    color: orange;
+}
+
+.containerDepoimentosMais a:hover{
+    color: rgb(196, 127, 0);
+}
+
+.containerDepoimentosMais hr{
+    width: 40px;
+}
+
+
+
+.containerGaleriaTitles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerGaleriaTitles h4{
+    padding-bottom: 10px;
+}
+
+.galery{
+    margin: 0 auto;
+    width: 1220px;
+    /* height: 700px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.galery img{
+    width: 400px;
+
+}
+
+.galery a{
+    text-decoration: none;
+}
+
+.containerContatoTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.containerContatoTitle hr{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 35px;
+    border: 1px solid black;
+}
+
+.containerContato iframe{
+    width: 1000px;
+    height: 600px;
+
+}
+
+.containerContato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.containerContatoInform{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.containerInform{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerInform button{
+    height: 60px;
+    width: 190px;
+    border: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.containerInform button:hover{
+    background-color: rgb(196, 127, 0);
+}
+
+.endereco{
+    display: flex;
+    gap: 10px;  
+}
+
+/* MEDIA */
+
+
+@media(max-width:1250px){
+    .imageContainer img{
+        height: 500px;
+    }
+   
+    .galery{
+        width: 900px;
+        justify-content: center;
+    }
+
+    .galery img{
+        width: 300px;
+
+    }
+
+    .containerDepoimentosMais{
+        padding-top: 15px;
+    }
+
+    .containerContato iframe{
+        width: 900px;
+    }
+
+    .containerContatoInform{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:950px){
+    .containerContato iframe{
+        width: 600px;
+    }
+}
+
+@media(max-width:900px){
+    .containerDepoimentos{
+        width: auto;
+    }
+
+    .galery{
+        width: 600px;
+        justify-content: center;
+    }
+
+    .galery img{
+        width: 500px;
+
+    }
+}
+
+@media(max-width:750px){
+
+    .imageContainer img{
+        height: 400px;
+    }
+
+}
+
+@media(max-width:600px){
+    .imageContainer img{
+        height: 300px;
+    }
+
+    .containerContato iframe{
+        width: 300px;
+    }
+
+    .galery{
+        width: 300px;
+        justify-content: center;
+    }
+
+    .galery img{
+        width: 250px;
+
+    }
+
+}
+
+@media(max-width:450px){
+    .imageContainer img{
+        height: 250px;
+    }
+
+    .containerTitles h1{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:370px){
+    .imageContainer img{
+        height: 150px;
+    }
+}
+
+@media(max-width:300px){
+  
+    .containerTitles h1{
+        font-size: 30px;
+    }
+
+    .containerContato iframe{
+        width: 150px;
+    }
+
+    .containerDepoimentosBoxContent{
+        width: 250px;
+    }
+
+    .containerContatoInform{
+        justify-content: center;
+        align-items: center;
+    }
+}
